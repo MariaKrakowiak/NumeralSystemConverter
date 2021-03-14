@@ -1,10 +1,10 @@
 # NumeralSystemConverter
 
-#Description
+# Description
 
 Fractional numbers can also be converted from one base to another. To convert a fractional number to another base, you should use the algorithm described below.
 
-#Algorithm
+# Algorithm
 
 As you know from the previous stage, in order to convert a number from one base to another, first, we need to convert it to decimal if it’s not decimal yet, and only then convert it to another base. The same applies to fractional numbers.
 
