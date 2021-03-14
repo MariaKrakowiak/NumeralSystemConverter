@@ -1,97 +1,26 @@
 # NumeralSystemConverter
 
-Description
+#Description
 
 Fractional numbers can also be converted from one base to another. To convert a fractional number to another base, you should use the algorithm described below.
 
-Algorithm
+#Algorithm
 
 As you know from the previous stage, in order to convert a number from one base to another, first, we need to convert it to decimal if it’s not decimal yet, and only then convert it to another base. The same applies to fractional numbers.
 
-Let’s imagine you have a fractional number ab.cdef
-a
-b
-.
-c
-d
-e
-f
- where ab
-a
-b
- is the integer part, cdef
-c
-d
-e
-f
- is the fractional part, and a,b,c,d,e,f
-a
-,
-b
-,
-c
-,
-d
-,
-e
-,
-f
- are some digits or letters, depending on the base of the number.
+Let’s imagine you have a fractional number ab.cdef where ab is the integer part, cdef is the fractional part, and a,b,c,d,e,f are some digits or letters, depending on the base of the number.
 
 In this case, we have 2 digits (letters) in the integer part and 4 digits (letters) in the fractional part. In other cases, the number of digits (letters) in parts can be different.
 
 To convert the number into decimal, we need to:
 
-Split the number into two parts: integer and fractional;
-Convert the integer part into decimal using the method from the previous stage;
-Convert the fractional part into decimal using the following formula:
-decimalValue=cbase1+dbase2+ebase3+fbase4
-d
-e
-c
-i
-m
-a
-l
-V
-a
-l
-u
-e
-=
-c
-b
-a
-s
-e
-1
-+
-d
-b
-a
-s
-e
-2
-+
-e
-b
-a
-s
-e
-3
-+
-f
-b
-a
-s
-e
-4
-where base
-b
-a
-s
-e
- is a base of the number you want to convert into decimal.
+* Split the number into two parts: integer and fractional;
+* Convert the integer part into decimal using the method from the previous stage;
+* Convert the fractional part into decimal using the following formula:
+
+![image](https://user-images.githubusercontent.com/59764846/111079654-235eb880-84fb-11eb-95e1-070af75e84a4.png)
+
+where base is a base of the number you want to convert into decimal.
 
 The more digits (letters) in the fractional part, the more addends in the formula. If the fractional part has letters, then you should use their number representation: ‘a’ – 10, ‘b’ – 11, c – ‘12’, and so on.
 
